@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  display: flex;
+  background-image: url(images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  height: 100vh;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 39px;
+}
+
+.item {
+  font-size: 15px;
+}
+
+.item1 {
+  display: flex;
+  align-items: center;
+  width: 430px;
+  color: #fff;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item2 {
+  background-color: hsl(248, 32%, 49%);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  /* float: right; */
+  border-radius: 9px;
+}
+
+.item3 {
+  background-color: #fff;
+  float: right;
+  padding: 29px;
+  border-radius: 9px;
+  width: 450px;
+}
+
+.item4 {
+  font-size: 9px;
+  text-align: center;
+  line-height: 28px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+button {
+  color: #fff;
+  background-color: hsl(154, 59%, 51%);
+  border-color: hsl(154, 59%, 51%);
+  padding: 17px;
+  text-align: center;
+  width: 100%;
+  /* font-weight: bolder; */
+  font-size: 11px;
+}
+
+button:hover {
+  background-color: hsl(154, 68%, 71%);
+  border-color: hsl(154, 68%, 71%);
+  cursor: pointer;
+}
+
+input {
+  width: 250px;
+  padding: 15px;
+  color: black;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+a {
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    height: 100vh;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 68px;
+    height: 127vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .item {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .item1 {
+    width: 22rem;
+  }
+
+  .item3 {
+    width: 22rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .item1 {
+    width: 19rem;
+  }
+
+  .item2 {
+    width: 19rem;
+  }
+
+  .item3 {
+    width: 19rem;
+  }
+}
+
+@media screen and (max-width: 335px) {
+  section {
+    height: 65rem;
+  }
+
+  .item1 {
+    width: 12rem;
+  }
+
+  .item2 {
+    font-size: smaller;
+    width: 16rem;
+  }
+
+  .item3 {
+    width: 16rem;
+  }
+}
